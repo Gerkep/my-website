@@ -15,8 +15,11 @@ body::before{
     left: 0;
     width: 100%;
     height: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00ff15), to(#0077ff));
+    background: -o-linear-gradient(#00ff15, #0077ff);
     background: linear-gradient(#00ff15, #0077ff);
-    clip-path: circle(26% at right 50%);
+    -webkit-clip-path: circle(26% at right 50%);
+            clip-path: circle(26% at right 50%);
 }
 body::after{
     content: '';
@@ -25,8 +28,11 @@ body::after{
     left: 0;
     width: 100%;
     height: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00ff6a), to(#0014ff));
+    background: -o-linear-gradient(#00ff6a, #0014ff);
     background: linear-gradient(#00ff6a, #0014ff);
-    clip-path: circle(18% at 10% 5%);
+    -webkit-clip-path: circle(18% at 10% 5%);
+            clip-path: circle(18% at 10% 5%);
 }
 .third-circle{
     margin-top: 90vh;
@@ -36,8 +42,11 @@ body::after{
     left: 0;
     width: 100%;
     height: 40%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00ff95), to(#003cff));
+    background: -o-linear-gradient(#00ff95, #003cff);
     background: linear-gradient(#00ff95, #003cff);
-    clip-path: circle(40% at 20% 40%);
+    -webkit-clip-path: circle(40% at 20% 40%);
+            clip-path: circle(40% at 20% 40%);
 }
 .navbar{
     top: 0;
@@ -77,9 +86,11 @@ svg {
   }
 .button{
     background: rgb(0,0,0);
+    background: -o-linear-gradient(103deg, rgba(0,0,0,1) 34%, rgba(60,60,60,1) 100%);
     background: linear-gradient(347deg, rgba(0,0,0,1) 34%, rgba(60,60,60,1) 100%);
     border: none;
-    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.493);
+    -webkit-box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.493);
+            box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.493);
     color: white;
     padding: 4vw;
     font-weight: bold;
@@ -127,24 +138,38 @@ svg {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.801);
   }
   .dropdown-email{
-      transform: translateX(170%);
+      -webkit-transform: translateX(170%);
+          -ms-transform: translateX(170%);
+              transform: translateX(170%);
+      -webkit-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
       transition: all 0.8s ease;
       margin-top: 0;
       text-decoration: none;
   }
   .dropdown-tel{
-    transform: translateX(-260%);
+    -webkit-transform: translateX(-260%);
+        -ms-transform: translateX(-260%);
+            transform: translateX(-260%);
+      -webkit-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
       transition: all 0.8s ease;
       margin-top: 3vh;
       text-decoration: none;
       color: white;
   }
   .show {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
     
     }
     .rotate{
-        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
     }
 #logo{
@@ -202,7 +227,11 @@ svg {
     cursor: pointer;
 }
 #work-btn:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 .work{
@@ -236,7 +265,8 @@ svg {
     -webkit-transition: all 0.7s ease;
     -o-transition: all 0.7s ease;
     transition: all 0.7s ease;
-    box-shadow: 20px 20px 50px rgb(0, 0, 0);
+    -webkit-box-shadow: 20px 20px 50px rgb(0, 0, 0);
+            box-shadow: 20px 20px 50px rgb(0, 0, 0);
  
 }
 .work-icon{
@@ -260,13 +290,17 @@ svg {
     position: absolute;
     top: 40vh;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
     -webkit-box-pack: center;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     -webkit-box-align: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     max-width: 100vh;
     margin: 0 auto;
     padding: 0;
@@ -284,19 +318,28 @@ svg {
     width: 27vw;
     text-align: center;
     z-index: 1;
-    box-shadow: 0px 0px 15px 0 rgb(31, 31, 31);
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-box-shadow: 0px 0px 15px 0 rgb(31, 31, 31);
+            box-shadow: 0px 0px 15px 0 rgb(31, 31, 31);
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background-color: rgb(39, 39, 39);
     -webkit-transition: 1s;
     -o-transition: 1s;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
     transition: 0.8s;
     -webkit-transition-delay: calc(0.2s * var(--i));
          -o-transition-delay: calc(0.8s * var(--i));
             transition-delay: calc(0.8s * var(--i));
     opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .slide-in .attachment{
     opacity: 1;
@@ -329,7 +372,8 @@ svg {
 
 }
 .container{ 
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, .5); 
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
     margin-bottom: 5vh;
@@ -346,10 +390,17 @@ svg {
     z-index: 2;
     color: white;
     text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.493);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
    
 }
@@ -365,7 +416,9 @@ svg {
 .container:hover::after,
 .container:hover img,
 .container:hover h2{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     opacity: 1;
 }
 .container::after{
@@ -390,10 +443,17 @@ svg {
     width: 28vw;
 }
 .content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .skills{
     overflow-x: scroll hidden;
@@ -419,12 +479,18 @@ svg {
 .third-section{
     width: 100%;
     height: 60vh;
-    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
     margin-top: 10vh;
     padding-top: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     color: white;
     background-color: #131313;
@@ -433,15 +499,19 @@ svg {
 .border{
     width: 100%;
     height: 61vh;
-    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
     margin-top: 8vh;
     padding-top: 20vh;
     padding-bottom: 15vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2183f373), to(#e91e63));
+    background: -o-linear-gradient(#2183f373, #e91e63);
     background: linear-gradient(#2183f373, #e91e63);
     position: absolute;
     -webkit-backdrop-filter: blur(10px);    
     backdrop-filter: blur(10px);
-    box-shadow: inset 0px 0px 40px 40px #32dbc4;
+    -webkit-box-shadow: inset 0px 0px 40px 40px #32dbc4;
+            box-shadow: inset 0px 0px 40px 40px #32dbc4;
 }
 input{
     margin: 3vh;
@@ -480,7 +550,8 @@ textarea{
         height: 12vh;
     }
     .button{
-        box-shadow: 0.4em 0.4em rgba(0, 0, 0, 0.493);
+        -webkit-box-shadow: 0.4em 0.4em rgba(0, 0, 0, 0.493);
+                box-shadow: 0.4em 0.4em rgba(0, 0, 0, 0.493);
         padding: 2vw;
         border-radius: 12px;
     }
@@ -499,14 +570,20 @@ textarea{
     }
 
     .dropdown-email{
-        transform: translateX(70vw);
+        -webkit-transform: translateX(70vw);
+            -ms-transform: translateX(70vw);
+                transform: translateX(70vw);
     }
     .dropdown-tel{
-      transform: translateX(-50vw);
+      -webkit-transform: translateX(-50vw);
+          -ms-transform: translateX(-50vw);
+              transform: translateX(-50vw);
       margin-top: 5vh;
     }
     .show {
-        transform: translateX(10vw);
+        -webkit-transform: translateX(10vw);
+            -ms-transform: translateX(10vw);
+                transform: translateX(10vw);
       
       }
       #logo p{
@@ -536,8 +613,11 @@ textarea{
         left: 0;
         width: 100%;
         height: 40%;
+        background: -webkit-gradient(linear, left top, left bottom, from(#00ff95), to(#003cff));
+        background: -o-linear-gradient(#00ff95, #003cff);
         background: linear-gradient(#00ff95, #003cff);
-        clip-path: circle(40% at 10% 60%);
+        -webkit-clip-path: circle(40% at 10% 60%);
+                clip-path: circle(40% at 10% 60%);
     }
     #work-btn{
         top: 9vw;
@@ -565,8 +645,12 @@ textarea{
         height: 32vh;
     }
     .work-page{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .work-attachments{
         max-width: 80vw;
@@ -601,14 +685,18 @@ textarea{
         height: 20vh;
     }
     .third-section{
-        clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+                clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
         padding-top: 10vh;
         text-align: left;
-        justify-content: left;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
     }
     .border{
         height: 43vh;
-        clip-path: polygon(0 0, 100% 32.5%, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 32.5%, 100% 100%, 0 100%);
+                clip-path: polygon(0 0, 100% 32.5%, 100% 100%, 0 100%);
     }
     .third-section h1{
         position: absolute;

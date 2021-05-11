@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Piotr Gerke</title>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="theme-color" content="#161623"/>
+</head>
+<body>
+   <header class="navbar">
+        <a id="insta-button" href="https://www.instagram.com/gerke.p/"><svg id="insta-icon" viewBox="0 0 511 511.9"xmlns="http://www.w3.org/2000/svg">
+            <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 
+            1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 
+            78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 
+            62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 
+            3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5
+             1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/>
+            <path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 
+            85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+         </svg></a>
+         <a id="github-button" href="https://github.com/Gerkep"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g></g><g>
+              <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+                 c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+                 c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+                 c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
+                 c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
+                 c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
+                 c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
+                 c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
+                 c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+               </svg></a>
+     <div id="logo"><p>Piotr</p><h2>Gerke</h2></div>
+      <div class="dropdown" id="dropdown">
+         <button onclick="myFunction()" id="contact-btn" class="contact-button"><img id="contact-img" src="images/image12.png"></button>
+         <div id="myDropdown" class="dropdown-content">
+             <h2 id="email" class="dropdown-email">piotrg2003@gmail.com</h2>
+             <h2 id="tel" class="dropdown-tel">+48 721 783 342</h2>
+         </div>
+   </header>
+   </div>
+      <div class="smart-txt">
+         <p class="passion-txt">My passion.<br>  Web Development</p>
+         <button class="button" onclick="workAppear()" id="work-btn">My work</button>
+   </div>
+   <div id="back-work" class="work">
+   <div id="my-work" class="work-page">
+      <ul class="work-attachments">
+         <li class="attachment" id="work-house" tyle="--i:2"><a href="https://gerkep.github.io/HouseDeveloper/"><img src="images/real_estate.png" class="work-icon"><p>Real estate</p></a></li>
+         <li class="attachment" id="work-bakery" style="--i:1"><a href="https://gerkep.github.io/Bakery"><img src="images/breadson.png" class="work-icon"><p>Bakery</p></a></li>
+         <li class="attachment" id="work-photographer" style="--i:3"><a href="https://ksawery-styczynski.herokuapp.com"><img src="images/photo-white.png" class="work-icon"><p>Photographer</p></a></li>
+         <li class="attachment" id="work-mywbsite" style="--i:4"><a href="#"><img src="images/person.png" class="work-icon"><p>Personal</p></a></li>
+         <li class="attachment" id="work-soon" style="--i:5"><a href="#"><img src="images/soon.png" class="work-icon"><p>More soon...</p></a></li>
+      </ul>
+      <a id="close-button" onclick="workDisappear()"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 294.843 294.843" style="enable-background:new 0 0 294.843 294.843;" xml:space="preserve"><g><path d="M147.421,0C66.133,0,0,66.133,0,147.421s66.133,147.421,147.421,147.421c38.287,0,74.567-14.609,102.159-41.136
+           c2.389-2.296,2.464-6.095,0.167-8.483c-2.295-2.388-6.093-2.464-8.483-0.167c-25.345,24.367-58.672,37.786-93.842,37.786
+           C72.75,282.843,12,222.093,12,147.421S72.75,12,147.421,12s135.421,60.75,135.421,135.421c0,16.842-3.052,33.273-9.071,48.835
+           c-1.195,3.091,0.341,6.565,3.432,7.761c3.092,1.193,6.565-0.341,7.761-3.432c6.555-16.949,9.879-34.836,9.879-53.165
+           C294.843,66.133,228.71,0,147.421,0z"/>
+        <path d="M167.619,160.134c-2.37-2.319-6.168-2.277-8.485,0.09c-2.318,2.368-2.277,6.167,0.09,8.485l47.236,46.236
+           c1.168,1.143,2.683,1.712,4.197,1.712c1.557,0,3.113-0.603,4.288-1.803c2.318-2.368,2.277-6.167-0.09-8.485L167.619,160.134z"/>
+        <path d="M125.178,133.663c1.171,1.171,2.707,1.757,4.243,1.757s3.071-0.586,4.243-1.757c2.343-2.343,2.343-6.142,0-8.485
+           L88.428,79.942c-2.343-2.343-6.143-2.343-8.485,0c-2.343,2.343-2.343,6.142,0,8.485L125.178,133.663z"/>
+        <path d="M214.9,79.942c-2.343-2.343-6.143-2.343-8.485,0L79.942,206.415c-2.343,2.343-2.343,6.142,0,8.485
+           c1.171,1.171,2.707,1.757,4.243,1.757s3.071-0.586,4.243-1.757L214.9,88.428C217.243,86.084,217.243,82.286,214.9,79.942z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+     </svg></a>
+      <h2 id="websites-header">My Websites</h2>
+   </div>
+   </div>
+   <div class="third-circle">
+   </div>
+   </div>
+   <h2 id="features-header">My websites features </h2>
+      <div class="skills">
+  
+         <div class="container" id="database"><div class="content"><img class="container-icon" src="images/database.png"><h2>Database</h2><i>I provide MySql<br>database for website<br>using Spring Data<br>or Spring Data REST.</i></div></div>
+         <div class="container" id="dynamic"><div class="content"><img class="container-icon" src="images/dynamic.png"><h2>Dynamic</h2><i>My websites are custom,<br> able to display content<br>from database<br>thanks to Spring.</i></div></div>
+         <div class="container" id="mobile"><div class="content"><img class="container-icon" src="images/dimond.png"><h2>Stylish</h2><i>I design my websites<br>using latest technologies<br>( HTML, CSS & Javascript).</i></div></div>
+         <div class="container" id="responsive"><div class="content"><img class="container-icon" src="images/responsive.png"><h2>Responsive</h2><i>User interface is<br> interactice and intuitive.</i></div></div>
+
+      </div>
+   </div>
+   <div class="border">
+   </div>
+   <div class="third-section">
+      <h1>Message me</h1>
+      <form action="#" th:action="@{/send}" th:object="${email}" method="POST">
+         <textarea id="message" rows="5" th:field="*{text}" type="text" placeholder="Message"></textarea>
+         <br>
+         <button class="button" id="submit-btn" type="submit">Send</button>
+         </form>
+      </div>
+   <script src="js/text.js"></script>
+   <script src="js/dropdown.js"></script>
+   <script src="js/showWork.js"></script>
+   <noscript>This website needs animatoins enabled to work</noscript>
+</body>
+</html>

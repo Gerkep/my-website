@@ -2,6 +2,8 @@ html, body{
     margin: 0;
     padding: 0;
     max-width: 100%;
+    width: 100%;
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
     background: #161623;
     position: relative;
@@ -14,12 +16,12 @@ body::before{
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from(#00ff15), to(#0077ff));
     background: -o-linear-gradient(#00ff15, #0077ff);
     background: linear-gradient(#00ff15, #0077ff);
-    -webkit-clip-path: circle(26% at right 50%);
-            clip-path: circle(26% at right 50%);
+    -webkit-clip-path: circle(32% at right 60%);
+            clip-path: circle(32% at right 60%);
 }
 body::after{
     content: '';
@@ -27,12 +29,12 @@ body::after{
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from(#00ff6a), to(#0014ff));
     background: -o-linear-gradient(#00ff6a, #0014ff);
     background: linear-gradient(#00ff6a, #0014ff);
-    -webkit-clip-path: circle(18% at 10% 5%);
-            clip-path: circle(18% at 10% 5%);
+    -webkit-clip-path: circle(22% at 10% 5%);
+            clip-path: circle(22% at 10% 5%);
 }
 .third-circle{
     margin-top: 90vh;
@@ -41,12 +43,12 @@ body::after{
     top: 0;
     left: 0;
     width: 100%;
-    height: 40%;
+    height: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from(#00ff95), to(#003cff));
     background: -o-linear-gradient(#00ff95, #003cff);
     background: linear-gradient(#00ff95, #003cff);
-    -webkit-clip-path: circle(40% at 20% 40%);
-            clip-path: circle(40% at 20% 40%);
+    -webkit-clip-path: circle(40% at 20% 35%);
+            clip-path: circle(40% at 20% 35%);
 }
 .navbar{
     top: 0;
@@ -175,7 +177,7 @@ svg {
 #logo{
     float: left;
     margin-left: 20vw;
-    margin-top: 2vh;
+    top: 0;
     color: rgb(255, 255, 255);
     position: absolute;
     z-index: 2;
@@ -184,17 +186,17 @@ svg {
     font-size: 2em;
     margin: 0;
     margin-left: 46vw;
-    margin-top: 24vh;
+    margin-top: 22vh;
     position: absolute;
 }
 #logo h2{
     font-size: 5em;
     margin: 0;
     position: absolute;
-    margin-top: 25vh;
+    margin-top: 23vh;
 }
 .smart-txt{
-    margin-top: 40vh;
+    margin-top: 38vh;
     height: 50vh;
     width: 100%;
     position: absolute;
@@ -362,7 +364,7 @@ svg {
     color: white;
     text-shadow: 0.05em 0.05em black;
     position: absolute;
-    top: 110vh;
+    top: 100vh;
     font-size: 2.5em;
     right: 3vw;
     left: 1vw;
@@ -372,14 +374,14 @@ svg {
 
 }
 .container{ 
-    -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, .5); 
-            box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, .5); 
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, .5);
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
     margin-bottom: 5vh;
-    margin: 5vw;
     width: 38vw;
-    height: 24vh;
+    height: 26vh;
+    margin: 10px;
     text-align: center;
     padding: 2vw;
     border-radius: 10px;
@@ -456,15 +458,17 @@ svg {
             align-items: center;
 }
 .skills{
-    overflow-x: scroll hidden;
+    position: absolute;
+    overflow-x: scroll ;
     overflow-y: hidden;
     white-space: nowrap;
     background-color: transparent;
-    margin-top: 122vh;
+    margin-top: 110vh;
+    width: 160vw;
     display: grid;
-    grid-template-columns: 50vw 50vw 50vw 50vw;
+    grid-template-columns: 40vw 40vw 40vw 40vw;
     grid-template-rows: 30vh;
-    gap: 0px 0px;
+    gap: 0px 25px;
     grid-template-areas:
       "dynamic mobile database responsive";
 }
@@ -477,12 +481,13 @@ svg {
 #database { grid-area: database; }
 
 .third-section{
+    position: absolute;
     width: 100%;
     height: 60vh;
     -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-    margin-top: 10vh;
-    padding-top: 20vh;
+    bottom: 0;
+    top: 160vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -495,24 +500,9 @@ svg {
     color: white;
     background-color: #131313;
     padding-bottom: 15vh;
+    padding-top: 15vh;
 }
-.border{
-    width: 100%;
-    height: 61vh;
-    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-    margin-top: 8vh;
-    padding-top: 20vh;
-    padding-bottom: 15vh;
-    background: -webkit-gradient(linear, left top, left bottom, from(#2183f373), to(#e91e63));
-    background: -o-linear-gradient(#2183f373, #e91e63);
-    background: linear-gradient(#2183f373, #e91e63);
-    position: absolute;
-    -webkit-backdrop-filter: blur(10px);    
-    backdrop-filter: blur(10px);
-    -webkit-box-shadow: inset 0px 0px 40px 40px #32dbc4;
-            box-shadow: inset 0px 0px 40px 40px #32dbc4;
-}
+
 input{
     margin: 3vh;
     background-color: #1d1d1dbe;
@@ -605,6 +595,11 @@ textarea{
         line-height: 8vh;
         padding: 2vw;
     }
+    body::before{
+        height: 120%;
+        -webkit-clip-path: circle(28% at right 55%);
+                clip-path: circle(28% at right 55%);
+    }
     .third-circle{
         margin-top: 120vh;
         content: '';
@@ -612,12 +607,12 @@ textarea{
         top: 0;
         left: 0;
         width: 100%;
-        height: 40%;
+        height: 140%;
         background: -webkit-gradient(linear, left top, left bottom, from(#00ff95), to(#003cff));
         background: -o-linear-gradient(#00ff95, #003cff);
         background: linear-gradient(#00ff95, #003cff);
-        -webkit-clip-path: circle(40% at 10% 60%);
-                clip-path: circle(40% at 10% 60%);
+        -webkit-clip-path: circle(40% at 10% 55%);
+                clip-path: circle(40% at 10% 55%);
     }
     #work-btn{
         top: 9vw;
@@ -632,7 +627,7 @@ textarea{
         border-right: solid white 2px;
         padding: 2vw;
         margin-left: 60vw;
-        margin-top: 10vh;
+        margin-top: 24vh;
         text-align: right;
     }
     #websites-header{
@@ -692,11 +687,7 @@ textarea{
         -webkit-box-pack: left;
             -ms-flex-pack: left;
                 justify-content: left;
-    }
-    .border{
-        height: 43vh;
-        -webkit-clip-path: polygon(0 0, 100% 32.5%, 100% 100%, 0 100%);
-                clip-path: polygon(0 0, 100% 32.5%, 100% 100%, 0 100%);
+    top: 220vh;
     }
     .third-section h1{
         position: absolute;
@@ -715,13 +706,13 @@ textarea{
     textarea{
         position: absolute;
         left: 16vw;
-        margin-top: 24vh;
+        margin-top: 32vh;
         height: 40vh;
         width: 80vw;
     }
     #submit-btn{
         position: absolute;
-        margin-top: 48vh;
+        margin-top: 54vh;
         left: 40vw;
         width: 15vw;
     }

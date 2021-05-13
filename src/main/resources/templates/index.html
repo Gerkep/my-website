@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Piotr Gerke</title>
     <link rel="shortcut icon" href="#">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta name="format-detection" content="telephone=no">
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#161623">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#161623">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#161623">
         <meta name="theme-color" content="#161623"/>
 </head>
 <body>
@@ -34,18 +37,19 @@
                  c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
                  c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
                </svg></a>
-     <div id="logo"><p>Piotr</p><h2>Gerke</h2></div>
+      <div id="logo"><p>Piotr</p><h2>Gerke</h2></div>
       <div class="dropdown" id="dropdown">
          <button onclick="myFunction()" id="contact-btn" class="contact-button"><img id="contact-img" src="images/image12.png"></button>
          <div id="myDropdown" class="dropdown-content">
              <h2 id="email" class="dropdown-email">piotrg2003@gmail.com</h2>
              <h2 id="tel" class="dropdown-tel">+48 721 783 342</h2>
          </div>
+         </div>
    </header>
-   </div>
       <div class="smart-txt">
          <p class="passion-txt">My passion.<br>  Web Development</p>
          <button class="button" onclick="workAppear()" id="work-btn">My work</button>
+      </div>
    </div>
    <div id="back-work" class="work">
    <div id="my-work" class="work-page">
@@ -74,7 +78,6 @@
    </div>
    <div class="third-circle">
    </div>
-   </div>
    <h2 id="features-header">My websites features </h2>
       <div class="skills">
   
@@ -82,11 +85,9 @@
          <div class="container" id="dynamic"><div class="content"><img class="container-icon" src="images/dynamic.png"><h2>Dynamic</h2><i>My websites are custom,<br> able to display content<br>from database<br>thanks to Spring.</i></div></div>
          <div class="container" id="mobile"><div class="content"><img class="container-icon" src="images/dimond.png"><h2>Stylish</h2><i>I design my websites<br>using latest technologies<br>( HTML, CSS & Javascript).</i></div></div>
          <div class="container" id="responsive"><div class="content"><img class="container-icon" src="images/responsive.png"><h2>Responsive</h2><i>User interface is<br> interactice and intuitive.</i></div></div>
-
       </div>
-   </div>
-   <div class="border">
-   </div>
+
+
    <div class="third-section">
       <h1>Message me</h1>
       <form action="#" th:action="@{/send}" th:object="${email}" method="POST">

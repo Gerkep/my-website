@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<head>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
     <title>Piotr Gerke</title>
     <link rel="shortcut icon" href="#">
     <meta charset="UTF-8">
@@ -12,8 +13,8 @@
         <!-- iOS Safari -->
         <meta name="apple-mobile-web-app-status-bar-style" content="#161623">
         <meta name="theme-color" content="#161623"/>
-</head>
-<body>
+ </head>
+ <body>
    <header class="navbar">
         <a id="insta-button" href="https://www.instagram.com/gerke.p/"><svg id="insta-icon" viewBox="0 0 511 511.9"xmlns="http://www.w3.org/2000/svg">
             <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 
@@ -90,15 +91,15 @@
 
    <div class="third-section">
       <h1>Message me</h1>
-      <form action="#" th:action="@{/send}" th:object="${email}" method="POST">
-         <textarea id="message" rows="5" th:field="*{text}" type="text" placeholder="Message"></textarea>
-         <br>
-         <button class="button" id="submit-btn" type="submit">Send</button>
-         </form>
+
+      <form th:action="@{/send}" method="post">
+         <textarea  id="message" th:field="${email.text}"></textarea>
+         <button class="button" id="submit-btn" type="submit" value="Add">Send</button>
+     </form>
       </div>
    <script src="js/text.js"></script>
    <script src="js/dropdown.js"></script>
    <script src="js/showWork.js"></script>
    <noscript>This website needs animatoins enabled to work</noscript>
-</body>
+ </body>
 </html>

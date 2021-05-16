@@ -16,7 +16,7 @@ public class EmailService {
         Email from = new Email("messagerobot0@gmail.com");
         String subject = "Nowa wiadomość ze strony";
         Email to = new Email("piotrg2003@gmail.com");
-        Content content = new Content("text/plain", "email.getText()");
+        Content content = new Content("text/plain", email.getText());
         Mail mail = new Mail(from, subject, to, content);
         Response respons = null;
         SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));

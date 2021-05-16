@@ -5,16 +5,14 @@
     <link rel="shortcut icon" href="#">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="theme-color" content="#161623" />
-        <!-- Chrome, Firefox OS and Opera -->
-        <meta name="theme-color" content="#161623">
         <!-- Windows Phone -->
-        <meta name="msapplication-navbutton-color" content="#161623">
+        <meta name="msapplication-navbutton-color" content="#161623"/>
         <!-- iOS Safari -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="#161623">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#161623"/>
         <meta name="theme-color" content="#161623"/>
-        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="telephone=no"/>
  </head>
  <body>
    <header class="navbar">
@@ -96,7 +94,7 @@
 
       <form th:action="@{/send}" method="post">
          <textarea  id="message" th:field="${email.text}"></textarea>
-         <button class="button" id="submit-btn" type="submit" value="Add">Send</button>
+         <button onclick="sentSuccesful()" class="button" id="submit-btn" type="submit" value="Add">Send</button>
      </form>
       </div>
    <script src="js/text.js"></script>

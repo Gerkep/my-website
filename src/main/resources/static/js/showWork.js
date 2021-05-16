@@ -11,3 +11,7 @@ function workDisappear(){
     slide.classList.remove("slide-in");
     back.classList.remove("slide-in");
 }
+
+function sentSuccesful(){
+    alert("Thank you for feedback;)")
+}
